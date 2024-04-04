@@ -1,0 +1,21 @@
+
+.app__header {
+    margin: 2rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    .app__title {
+        margin: 0;
+    }
+
+    .create__btn {
+        margin-left: auto;
+        background-color: rgb(99, 99, 138);
+        color: rgb(255, 255, 255);
+        font-weight: 300;
+        padding: 0.4rem 1.2rem;
+        border: none;
+    }
+}
