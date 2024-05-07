@@ -6,7 +6,7 @@ import UserCard from './components/UserCard'
 
 function App() {
 
-  const BASEURL = 'http://localhost:8080'
+  const BASEURL = 'https://users-crud-9pu2.onrender.com'
   const [ users, msj, getUsers, createUser, deleteUser, updateUser] = useCrud(BASEURL)
 
   const [updateableUser, setUpdateableUser] = useState()
