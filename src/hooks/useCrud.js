@@ -40,7 +40,7 @@ const useCrud = (BASEURL) => {
     const updateApi = (path, id, data) => {
         const url = `${BASEURL}${path}/${id}/`
         console.log(url)
-        axios.patch(url, data)
+        axios.put(url, data)
             .then(res => setResults(results.map(r => r.id === id ? res.data : r)))
             .catch(err => console.log(err))
     }
