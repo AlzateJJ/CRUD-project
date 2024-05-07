@@ -4,7 +4,7 @@ import './styles/UserCard.css'
 const UserCard = ( { user, setUpdateableUser, deleteUser, setFormIsClosed } ) => {
 
     const handleDelete = () => {
-        deleteUser('users/', user.id)
+        deleteUser('/users', user.id)
     }
 
     const handleUpdate = () => {

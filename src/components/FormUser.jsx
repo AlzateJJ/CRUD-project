@@ -16,11 +16,11 @@ const FormUser = ( { createUser, updateableUser, setUpdateableUser, updateUser, 
 
         if (updateableUser) {
             // UPDATE
-            updateUser('users/', updateableUser.id, data)
+            updateUser('/users', updateableUser.id, data)
             setUpdateableUser()
         } else {
             // CREATE
-            createUser('users/', data)
+            createUser('/users', data)
         }
 
         reset({

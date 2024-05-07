@@ -6,7 +6,7 @@ import UserCard from './components/UserCard'
 
 function App() {
 
-  const BASEURL = 'https://users-crud.academlo.tech/'
+  const BASEURL = 'http://localhost:8080'
   const [ users, msj, getUsers, createUser, deleteUser, updateUser] = useCrud(BASEURL)
 
   const [updateableUser, setUpdateableUser] = useState()
@@ -14,7 +14,7 @@ function App() {
   const [formIsClosed, setFormIsClosed] = useState(true)
 
   useEffect(() => {
-    getUsers('/users/')
+    getUsers('/users')
   }, [])
 
   console.log(users)
